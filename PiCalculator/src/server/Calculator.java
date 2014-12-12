@@ -3,7 +3,7 @@ package server;
 import java.math.BigDecimal;
 import java.rmi.RemoteException;
 
-/** Dies ist das Interface für den RMI-Server.
+/** Dies ist das Interface fuer den RMI-Server.
  * @author FOCK
  *
  */
