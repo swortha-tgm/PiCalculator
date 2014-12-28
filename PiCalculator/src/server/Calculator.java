@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.rmi.RemoteException;
 
 /** Dies ist das Interface fuer den RMI-Server.
- * @author FOCK
+ * @author Fock & Wortha
  *
  */
 public interface Calculator extends java.rmi.Remote{
