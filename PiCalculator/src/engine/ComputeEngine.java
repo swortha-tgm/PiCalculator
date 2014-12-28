@@ -43,7 +43,7 @@ public class ComputeEngine implements Compute {
 			Compute engine = new ComputeEngine();
 			Compute stub = (Compute) UnicastRemoteObject
 					.exportObject(engine, 0);
-			Registry registry = LocateRegistry.createRegistry(1099);
+			Registry registry = LocateRegistry.createRegistry(1099); //als Port wurde 1009 gewaehlt
 			registry.rebind(name, stub);
 			System.out.println("ComputeEngine bound");
 		} catch (Exception e) {
