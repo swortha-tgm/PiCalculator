@@ -52,13 +52,15 @@ public class ComputePi {
 	 */
 	public static void main(String args[]) {
 		if (System.getSecurityManager() == null) {
-			System.setProperty("java.security.policy", "file:./policy/pi.policy");
+			System.setProperty("java.security.policy",
+					"file:./policy/pi.policy");
 			System.setSecurityManager(new SecurityManager());
 		}
 		try {
 			String name = "Compute";
 			// IP-Adresse und Port werden uebergeben
-			Registry registry = LocateRegistry.getRegistry(args[0], Registry.REGISTRY_PORT); 
+			Registry registry = LocateRegistry.getRegistry(args[0],
+					Registry.REGISTRY_PORT);
 			Compute comp = (Compute) registry.lookup(name);
 			Pi task = new Pi(Integer.parseInt(args[1])); // Laenge von PI
 			BigDecimal pi = comp.executeTask(task);
