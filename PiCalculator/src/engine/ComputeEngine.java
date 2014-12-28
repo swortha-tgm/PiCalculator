@@ -33,6 +33,8 @@ public class ComputeEngine implements Compute {
 	 */
 	public static void main(String[] args) {
 		if (System.getSecurityManager() == null) {
+			System.setProperty("java.security.policy",
+					"file:./policy/pi.policy");
 			System.setSecurityManager(new SecurityManager());
 		}
 		try {
@@ -40,7 +42,7 @@ public class ComputeEngine implements Compute {
 			Compute engine = new ComputeEngine();
 			Compute stub = (Compute) UnicastRemoteObject
 					.exportObject(engine, 0);
-			Registry registry = LocateRegistry.getRegistry();
+			Registry registry = LocateRegistry.getRegistry(1099);
 			registry.rebind(name, stub);
 			System.out.println("ComputeEngine bound");
 		} catch (Exception e) {
