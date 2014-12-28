@@ -1,5 +1,6 @@
-package rmi;
-/**
+package compute;
+ 
+/** Interface
  * @author FOCK
  *
  * @param <T>

@@ -1,4 +1,4 @@
-package rmi;
+package RMI;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -7,8 +7,8 @@ import java.math.BigDecimal;
  * @author FOCK
  *
  */
-public class Pi implements Task<BigDecimal>, Serializable {
-
+public class Pi implements Task<BigDecimal>, Serializable 
+{
     private static final long serialVersionUID = 227L;
 
     /** constants used in pi computation */
@@ -25,19 +25,17 @@ public class Pi implements Task<BigDecimal>, Serializable {
     /**
      * Construct a task to calculate pi to the specified
      * precision.
-     * @param digits 
      */
-    public Pi(int digits) {
-    	String policy = "grant{permission java.security.AllPermission;};";
-		System.setProperty("java.security.policy", policy.toString());
-    	
+    public Pi(int digits) 
+    {
         this.digits = digits;
     }
 
     /**
      * Calculate pi.
      */
-    public BigDecimal execute() {
+    public BigDecimal execute() 
+    {
         return computePi(digits);
     }
 
@@ -50,10 +48,9 @@ public class Pi implements Task<BigDecimal>, Serializable {
      *
      * and a power series expansion of arctan(x) to 
      * sufficient precision.
-     * @param digits 
-     * @return 
      */
-    public static BigDecimal computePi(int digits) {
+    public static BigDecimal computePi(int digits) 
+    {
         int scale = digits + 5;
         BigDecimal arctan1_5 = arctan(5, scale);
         BigDecimal arctan1_239 = arctan(239, scale);
@@ -71,12 +68,8 @@ public class Pi implements Task<BigDecimal>, Serializable {
      *
      * arctan(x) = x - (x^3)/3 + (x^5)/5 - (x^7)/7 + 
      *     (x^9)/9 ...
-     * @param inverseX 
-     * @param scale 
-     * @return 
      */   
-    public static BigDecimal arctan(int inverseX, 
-                                    int scale) 
+    public static BigDecimal arctan(int inverseX, int scale) 
     {
         BigDecimal result, numer, term;
         BigDecimal invX = BigDecimal.valueOf(inverseX);
