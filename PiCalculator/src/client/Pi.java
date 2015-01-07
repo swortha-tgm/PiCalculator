@@ -30,37 +30,26 @@
  */
 package client;
 
+import compute.Compute;
 import compute.Task;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.rmi.RemoteException;
 
 /**
  * Ist dafuer zustaendig, dass Pi funktioniert.
  *
  * @author Oracle
  */
-public class Pi implements Task<BigDecimal>, Serializable {
+public class Pi implements Compute {
 	private static final long serialVersionUID = 227L;
 	/** constants used in pi computation */
 	private static final BigDecimal FOUR = BigDecimal.valueOf(4);
 	/** rounding mode to use during pi computation */
 	private static final int roundingMode = BigDecimal.ROUND_HALF_EVEN;
 	/** digits of precision after the decimal point */
-	private final int digits;
 
-	/**
-	 * Construct a task to calculate pi to the specified precision.
-	 */
-	public Pi(int digits) {
-		this.digits = digits;
-	}
-
-	/**
-	 * Calculate pi.
-	 */
-	public BigDecimal execute() {
-		return computePi(digits);
-	}
 
 	/**
 	 * Compute the value of pi to the specified number of digits after the
@@ -70,7 +59,7 @@ public class Pi implements Task<BigDecimal>, Serializable {
 	 *
 	 * and a power series expansion of arctan(x) to sufficient precision.
 	 */
-	public static BigDecimal computePi(int digits) {
+	public  BigDecimal calculatePi(int digits) {
 		int scale = digits + 5;
 		BigDecimal arctan1_5 = arctan(5, scale);
 		BigDecimal arctan1_239 = arctan(239, scale);
@@ -106,4 +95,5 @@ public class Pi implements Task<BigDecimal>, Serializable {
 		} while (term.compareTo(BigDecimal.ZERO) != 0);
 		return result;
 	}
+
 }

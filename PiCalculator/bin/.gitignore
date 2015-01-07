@@ -6,3 +6,7 @@
 /engine/
 /Pi.policy
 /pi.policy
+/CalculatorBalancer.class
+/CalculatorRegistry.class
+/CalculatorRegistryImpl.class
+/balancer/

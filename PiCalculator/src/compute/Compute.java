@@ -30,6 +30,7 @@
 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 package compute;
+import java.math.BigDecimal;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 /**
@@ -39,5 +40,5 @@ import java.rmi.RemoteException;
 */
 public interface Compute extends Remote
 {
-<T> T executeTask(Task<T> t) throws RemoteException;
+public BigDecimal calculatePi(int decimalPlaces) throws RemoteException;
 }
