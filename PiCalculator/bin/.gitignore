@@ -1,12 +1,4 @@
+/balancer/
 /client/
-/controler/
-/server/
-/Pi/
 /compute/
 /engine/
-/Pi.policy
-/pi.policy
-/CalculatorBalancer.class
-/CalculatorRegistry.class
-/CalculatorRegistryImpl.class
-/balancer/

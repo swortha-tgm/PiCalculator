@@ -63,7 +63,7 @@ public class ComputePi {
 					Registry.REGISTRY_PORT);
 			Compute comp = (Compute) registry.lookup(name);
 			
-			BigDecimal pi = comp.calculatePi(10);
+			BigDecimal pi = comp.calculatePi(Integer.parseInt(args[1]));
 			System.out.println(pi);
 		} catch (Exception e) {
 			System.err.println("ComputePi exception:");
