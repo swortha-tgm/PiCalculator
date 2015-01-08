@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * @author FOCK
  *
  */
-public class testComputeEngine {
+public class TestComputeEngine {
 	ComputeEngine c;
 	CopyOfComputeEngine c1;
 

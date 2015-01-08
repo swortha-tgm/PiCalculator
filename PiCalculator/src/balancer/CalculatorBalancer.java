@@ -7,10 +7,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
-import client.Pi;
 import compute.Compute;
-import compute.Task;
-import engine.ComputeEngine;
 
 /**
  * 
@@ -21,6 +18,10 @@ public class CalculatorBalancer extends UnicastRemoteObject implements Compute {
 	private CalculatorRegistryImpl cr;
 	private int counter = 0;
 
+	/**
+	 * @throws RemoteException
+	 * @throws AlreadyBoundException
+	 */
 	public CalculatorBalancer() throws RemoteException, AlreadyBoundException {
 		super();
 		System.out.println("Balancer is online...");
@@ -32,6 +33,11 @@ public class CalculatorBalancer extends UnicastRemoteObject implements Compute {
 		registry.bind("Compute", this);
 	}
 
+	/**
+	 * @param args
+	 * @throws RemoteException
+	 * @throws AlreadyBoundException
+	 */
 	public static void main(String[] args) throws RemoteException,
 			AlreadyBoundException {
 		new CalculatorBalancer();
