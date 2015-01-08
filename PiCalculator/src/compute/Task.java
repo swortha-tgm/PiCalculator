@@ -37,5 +37,8 @@ package compute;
 */
 public interface Task<T>
 {
+/**
+ * @return
+ */
 T execute();
 }

@@ -40,5 +40,10 @@ import java.rmi.RemoteException;
 */
 public interface Compute extends Remote
 {
+/**
+ * @param decimalPlaces
+ * @return
+ * @throws RemoteException
+ */
 public BigDecimal calculatePi(int decimalPlaces) throws RemoteException;
 }

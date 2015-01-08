@@ -29,6 +29,8 @@ public class CopyOfComputeEngine implements Compute {
 
 	/**
 	 * Diese Methode ist fuer die Berechnung zustaendigs
+	 * @param t 
+	 * @return 
 	 */
 	public <T> T executeTask(Task<T> t) {
 		return t.execute();
