@@ -1,0 +1,469 @@
+commit d30ea65943a51a35539c5bf124100476441ce5ea
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 19:26:24 2015 +0100
+
+    doc added to the jar
+
+ Dezsys07_Pi_Calculator.docx | Bin 523221 -> 522967 bytes
+ Dezsys07_Pi_Calculator.pdf  | Bin 0 -> 841524 bytes
+ Fock_Wortha_PiCalc.jar      | Bin 388876 -> 1181537 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 50922e7b16aa2814d9b03e7ff0751afcd57a86e0
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 19:25:05 2015 +0100
+
+    -almost finished jar added
+
+ Dezsys07_Pi_Calculator.docx                        | Bin 0 -> 523221 bytes
+ Dezsys07_Pi_Calculator_neu (Kopie).docx            | Bin 684380 -> 0 bytes
+ Dezsys07_Pi_Calculator_neu.docx                    | Bin 534874 -> 0 bytes
+ Fock_Wortha_PiCalc.jar                             | Bin 0 -> 388876 bytes
+ PiCalcAstah.asta                                   | Bin 25561 -> 25573 bytes
+ PiCalcAstah.asta.bak                               | Bin 25470 -> 25561 bytes
+ PiCalcAstah.asta.lock                              |   0
+ PiCalculator/README.txt                            |   6 +
+ PiCalculator/bin/.gitignore                        |   5 -
+ PiCalculator/bin/engine/CopyOfComputeEngine.class  | Bin 2436 -> 2436 bytes
+ PiCalculator/bin/test/TestComputeEngine.class      | Bin 0 -> 1141 bytes
+ PiCalculator/doc/allclasses-frame.html             |  28 +
+ PiCalculator/doc/allclasses-noframe.html           |  28 +
+ PiCalculator/doc/balancer/CalculatorBalancer.html  | 355 +++++++++++++
+ PiCalculator/doc/balancer/CalculatorRegistry.html  | 263 ++++++++++
+ .../doc/balancer/CalculatorRegistryImpl.html       | 375 ++++++++++++++
+ .../doc/balancer/class-use/CalculatorBalancer.html | 124 +++++
+ .../doc/balancer/class-use/CalculatorRegistry.html | 164 ++++++
+ .../balancer/class-use/CalculatorRegistryImpl.html | 124 +++++
+ PiCalculator/doc/balancer/package-frame.html       |  25 +
+ PiCalculator/doc/balancer/package-summary.html     | 161 ++++++
+ PiCalculator/doc/balancer/package-tree.html        | 163 ++++++
+ PiCalculator/doc/balancer/package-use.html         | 157 ++++++
+ PiCalculator/doc/client/ComputePi.html             | 287 +++++++++++
+ PiCalculator/doc/client/Pi.html                    | 327 ++++++++++++
+ PiCalculator/doc/client/class-use/ComputePi.html   | 124 +++++
+ PiCalculator/doc/client/class-use/Pi.html          | 124 +++++
+ PiCalculator/doc/client/package-frame.html         |  21 +
+ PiCalculator/doc/client/package-summary.html       | 150 ++++++
+ PiCalculator/doc/client/package-tree.html          | 138 +++++
+ PiCalculator/doc/client/package-use.html           | 124 +++++
+ PiCalculator/doc/compute/Compute.html              | 243 +++++++++
+ PiCalculator/doc/compute/Task.html                 | 233 +++++++++
+ PiCalculator/doc/compute/class-use/Compute.html    | 256 +++++++++
+ PiCalculator/doc/compute/class-use/Task.html       | 172 ++++++
+ PiCalculator/doc/compute/package-frame.html        |  21 +
+ PiCalculator/doc/compute/package-summary.html      | 150 ++++++
+ PiCalculator/doc/compute/package-tree.html         | 138 +++++
+ PiCalculator/doc/compute/package-use.html          | 206 ++++++++
+ PiCalculator/doc/constant-values.html              | 124 +++++
+ PiCalculator/doc/deprecated-list.html              | 124 +++++
+ PiCalculator/doc/engine/ComputeEngine.html         | 331 ++++++++++++
+ PiCalculator/doc/engine/CopyOfComputeEngine.html   | 330 ++++++++++++
+ .../doc/engine/class-use/ComputeEngine.html        | 124 +++++
+ .../doc/engine/class-use/CopyOfComputeEngine.html  | 124 +++++
+ PiCalculator/doc/engine/package-frame.html         |  21 +
+ PiCalculator/doc/engine/package-summary.html       | 150 ++++++
+ PiCalculator/doc/engine/package-tree.html          | 138 +++++
+ PiCalculator/doc/engine/package-use.html           | 124 +++++
+ PiCalculator/doc/help-doc.html                     | 229 ++++++++
+ PiCalculator/doc/index-files/index-1.html          | 137 +++++
+ PiCalculator/doc/index-files/index-10.html         | 139 +++++
+ PiCalculator/doc/index-files/index-2.html          | 129 +++++
+ PiCalculator/doc/index-files/index-3.html          | 180 +++++++
+ PiCalculator/doc/index-files/index-4.html          | 139 +++++
+ PiCalculator/doc/index-files/index-5.html          | 129 +++++
+ PiCalculator/doc/index-files/index-6.html          | 129 +++++
+ PiCalculator/doc/index-files/index-7.html          | 137 +++++
+ PiCalculator/doc/index-files/index-8.html          | 133 +++++
+ PiCalculator/doc/index-files/index-9.html          | 131 +++++
+ PiCalculator/doc/index.html                        |  74 +++
+ PiCalculator/doc/overview-frame.html               |  25 +
+ PiCalculator/doc/overview-summary.html             | 151 ++++++
+ PiCalculator/doc/overview-tree.html                | 174 +++++++
+ PiCalculator/doc/package-list                      |   5 +
+ PiCalculator/doc/script.js                         |  30 ++
+ PiCalculator/doc/serialized-form.html              | 168 ++++++
+ PiCalculator/doc/stylesheet.css                    | 574 +++++++++++++++++++++
+ PiCalculator/doc/test/TestComputeEngine.html       | 293 +++++++++++
+ .../doc/test/class-use/TestComputeEngine.html      | 124 +++++
+ PiCalculator/doc/test/package-frame.html           |  20 +
+ PiCalculator/doc/test/package-summary.html         | 142 +++++
+ PiCalculator/doc/test/package-tree.html            | 137 +++++
+ PiCalculator/doc/test/package-use.html             | 124 +++++
+ PiCalculator/src/compute/Compute.java              |   5 +
+ PiCalculator/src/compute/Task.java                 |   3 +
+ PiCalculator/src/engine/CopyOfComputeEngine.java   |   2 +
+ 77 files changed, 9940 insertions(+), 5 deletions(-)
+
+commit 449b60aa891d3394a54583e2c4be78eb600efd91
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Thu Jan 8 19:12:23 2015 +0100
+
+    updated Docu
+
+ Dezsys07_Pi_Calculator_neu (Kopie).docx | Bin 0 -> 684380 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 57a8652d3bbeb778b6191e1e3df9b1593f0d5dc7
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Thu Jan 8 19:05:06 2015 +0100
+
+    no change
+
+ PiCalculator/src/balancer/CalculatorRegistry.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 39268216544ad81900cdbcab254af9c1cf18155c
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 19:01:26 2015 +0100
+
+    Astah files added
+    Doc updated
+
+ Bilder/PiCalcUML.PNG            | Bin 0 -> 256622 bytes
+ Dezsys07_Pi_Calculator_neu.docx | Bin 276980 -> 534874 bytes
+ PiCalcAstah.asta                | Bin 0 -> 25561 bytes
+ PiCalcAstah.asta.bak            | Bin 0 -> 25470 bytes
+ PiCalcAstah.asta.lock           |   0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 01ab1239b1250997eb96846eceb62be9d66e3237
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 18:50:32 2015 +0100
+
+    -minor doc fix
+
+ PiCalculator/bin/balancer/CalculatorBalancer.class | Bin 2101 -> 2101 bytes
+ PiCalculator/src/balancer/CalculatorBalancer.java  |  12 ++++--
+ PiCalculator/src/test/TestComputeEngine.java       |  41 +++++++++++++++++++++
+ PiCalculator/src/test/testComputeEngine.java       |  41 ---------------------
+ 4 files changed, 50 insertions(+), 44 deletions(-)
+
+commit b9e961270714bec20a45cd1a93381cadb78576da
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 18:41:43 2015 +0100
+
+    Docs edited
+
+ Dezsys07_Pi_Calculator.docx     | Bin 275646 -> 0 bytes
+ Dezsys07_Pi_Calculator_neu.docx | Bin 268193 -> 276980 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 284f0c29d251e0769f5ee2d772e61b983d561ff6
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Thu Jan 8 18:39:11 2015 +0100
+
+    added Javadoc
+
+ PiCalculator/bin/.gitignore                        |   4 ++++
+ .../bin/balancer/CalculatorRegistryImpl.class      | Bin 1233 -> 1233 bytes
+ PiCalculator/bin/client/Pi.class                   | Bin 1598 -> 1550 bytes
+ PiCalculator/bin/engine/ComputeEngine.class        | Bin 2418 -> 2406 bytes
+ PiCalculator/src/balancer/CalculatorRegistry.java  |  24 ++++++++++++++++-----
+ .../src/balancer/CalculatorRegistryImpl.java       |  21 +++++++++++++-----
+ PiCalculator/src/client/Pi.java                    |   8 +++----
+ PiCalculator/src/engine/ComputeEngine.java         |  16 ++++++++------
+ 8 files changed, 52 insertions(+), 21 deletions(-)
+
+commit b1ad8d6ea37a0508faeab206dfebd9db150d12c0
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 11:38:16 2015 +0100
+
+    added Testclass and fixed minor bugs @Balancer
+
+ PiCalculator/.classpath                            |   1 +
+ PiCalculator/bin/.gitignore                        |   5 +--
+ PiCalculator/bin/balancer/CalculatorBalancer.class | Bin 0 -> 2101 bytes
+ PiCalculator/bin/balancer/CalculatorRegistry.class | Bin 0 -> 320 bytes
+ .../bin/balancer/CalculatorRegistryImpl.class      | Bin 0 -> 1233 bytes
+ PiCalculator/bin/client/ComputePi.class            | Bin 0 -> 1693 bytes
+ PiCalculator/bin/client/Pi.class                   | Bin 0 -> 1598 bytes
+ PiCalculator/bin/compute/Compute.class             | Bin 0 -> 229 bytes
+ PiCalculator/bin/compute/Task.class                | Bin 0 -> 217 bytes
+ PiCalculator/bin/engine/ComputeEngine.class        | Bin 0 -> 2418 bytes
+ PiCalculator/bin/engine/CopyOfComputeEngine.class  | Bin 0 -> 2436 bytes
+ PiCalculator/src/test/testComputeEngine.java       |  41 +++++++++++++++++++++
+ 12 files changed, 43 insertions(+), 4 deletions(-)
+
+commit 8fa508755a72d10d2ac7a5c3fdd90593dc3b0c45
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Thu Jan 8 10:29:50 2015 +0100
+
+    Balancer modified & ComputeEngine cloned to test the Balancer
+
+ PiCalculator/.classpath                            |  12 +-
+ PiCalculator/.project                              |  34 ++--
+ PiCalculator/.settings/org.eclipse.jdt.core.prefs  |  22 +--
+ PiCalculator/bin/.gitignore                        |  10 +-
+ PiCalculator/src/balancer/CalculatorBalancer.java  | 106 +++++------
+ PiCalculator/src/balancer/CalculatorRegistry.java  |  26 +--
+ .../src/balancer/CalculatorRegistryImpl.java       |  70 ++++----
+ PiCalculator/src/client/ComputePi.java             | 144 +++++++--------
+ PiCalculator/src/client/Pi.java                    | 198 ++++++++++-----------
+ PiCalculator/src/compute/Compute.java              |  88 ++++-----
+ PiCalculator/src/compute/Task.java                 |  82 ++++-----
+ PiCalculator/src/engine/CopyOfComputeEngine.java   |  65 +++++++
+ 12 files changed, 459 insertions(+), 398 deletions(-)
+
+commit c61b4d1eb0396035b7bff20ef551f2615f71817d
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Wed Jan 7 21:53:34 2015 +0100
+
+    updared doku
+
+ Dezsys07_Pi_Calculator_neu.docx | Bin 0 -> 268193 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 047c14f7b3acc5067ca19914155cc3af8cca9fff
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Wed Jan 7 16:42:34 2015 +0100
+
+    added balancer
+
+ PiCalculator/bin/.gitignore                        |  4 ++
+ PiCalculator/src/balancer/CalculatorBalancer.java  | 51 ++++++++++++++++++++++
+ PiCalculator/src/balancer/CalculatorRegistry.java  | 13 ++++++
+ .../src/balancer/CalculatorRegistryImpl.java       | 35 +++++++++++++++
+ PiCalculator/src/client/ComputePi.java             |  4 +-
+ PiCalculator/src/client/Pi.java                    | 22 +++-------
+ PiCalculator/src/compute/Compute.java              |  3 +-
+ PiCalculator/src/engine/ComputeEngine.java         | 15 ++++++-
+ 8 files changed, 126 insertions(+), 21 deletions(-)
+
+commit 17577ff43dc8dc2efee2b18441515ea64ca6e12e
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Sun Dec 28 15:44:51 2014 +0100
+
+    added comments
+
+ PiCalculator/src/engine/ComputeEngine.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c7062f1b20848c2f4e309e5a95b386533fd071ea
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:31:25 2014 +0100
+
+    forgot to grant permissions in the policy file
+
+ PiCalculator/policy/pi.policy          | 3 +++
+ PiCalculator/src/client/ComputePi.java | 6 ++++--
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+commit 82ca56e4bdef49dbd083f925f6ab57ca71360a1b
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:26:49 2014 +0100
+
+    -ComputeEngine fixes
+
+ PiCalculator/bin/.gitignore                | 2 ++
+ PiCalculator/src/engine/ComputeEngine.java | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit b7b1252a7a4609e6d7a143801d011b3ddab342f5
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:20:01 2014 +0100
+
+    deleted unnecessary packages & classes
+
+ PiCalculator/bin/controler/Main.class    | Bin 257 -> 0 bytes
+ PiCalculator/bin/server/Calculator.class | Bin 225 -> 0 bytes
+ PiCalculator/bin/server/Server.class     | Bin 1766 -> 0 bytes
+ PiCalculator/src/controler/Main.java     |   9 ----
+ PiCalculator/src/server/Calculator.java  |  17 -------
+ PiCalculator/src/server/Server.java      |  78 -------------------------------
+ 6 files changed, 104 deletions(-)
+
+commit 7d87d86fc8ce3a9f95389f5fa5c589c0a6065c3e
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Sun Dec 28 15:18:46 2014 +0100
+
+    deleted main.java added ComputePi.java and Pi.java
+
+ PiCalculator/bin/client/Client.class    | Bin 1488 -> 0 bytes
+ PiCalculator/bin/controler/Main.class   | Bin 388 -> 257 bytes
+ PiCalculator/src/client/Client.java     |  35 ----------
+ PiCalculator/src/client/ComputePi.java  |  71 +++++++++++++++++++++
+ PiCalculator/src/client/Pi.java         | 109 ++++++++++++++++++++++++++++++++
+ PiCalculator/src/controler/Main.java    |   4 +-
+ PiCalculator/src/server/Calculator.java |   2 +-
+ 7 files changed, 182 insertions(+), 39 deletions(-)
+
+commit 5a813677531e26e81f323049eb5d9ce5a22346db
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:16:47 2014 +0100
+
+    deleted one class that was similar to an other clas in a different
+    package
+
+ PiCalculator/src/engine/Compute.java       | 19 -------------------
+ PiCalculator/src/engine/ComputeEngine.java |  1 +
+ 2 files changed, 1 insertion(+), 19 deletions(-)
+
+commit 90af50620da9d6a9af2c71b8a8ebd803d235c12e
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:14:21 2014 +0100
+
+    -configured the policy
+
+ PiCalculator/src/engine/ComputeEngine.java | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 11bb1be859d57958f0cacc14b7ee342c0ebcca25
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:08:37 2014 +0100
+
+    -added policy
+
+ PiCalculator/policy/pi.policy | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c34e4b3b47d006adc8322a2edd782fbb099095bb
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 15:05:46 2014 +0100
+
+    -package engine was added
+
+ PiCalculator/bin/.gitignore                |  1 +
+ PiCalculator/src/engine/Compute.java       | 19 +++++++++++
+ PiCalculator/src/engine/ComputeEngine.java | 51 ++++++++++++++++++++++++++++++
+ 3 files changed, 71 insertions(+)
+
+commit 2bb33f77b8de09c070697a0c56c5f5931c5a1278
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Sun Dec 28 15:01:35 2014 +0100
+
+    added Classes Compute and Task
+    ;
+
+ PiCalculator/bin/.gitignore           |  1 +
+ PiCalculator/src/compute/Compute.java | 43 +++++++++++++++++++++++++++++++++++
+ PiCalculator/src/compute/Task.java    | 41 +++++++++++++++++++++++++++++++++
+ 3 files changed, 85 insertions(+)
+
+commit 0388f1a6cb84ac75a1a8e14f4686d2c01092bd4d
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Sun Dec 28 14:54:28 2014 +0100
+
+    Aufgeraumt... Lets get it started
+
+ GGHF_GoodLuckHaveFun.txt                         |   0
+ RMITest/.classpath                               |   6 --
+ RMITest/.project                                 |  17 ----
+ RMITest/.settings/org.eclipse.jdt.core.prefs     |  11 ---
+ RMITest/bin/rmi/Compute.class                    | Bin 163 -> 0 bytes
+ RMITest/bin/rmi/ComputeEngine.class              | Bin 1610 -> 0 bytes
+ RMITest/bin/rmi/ComputePi.class                  | Bin 1785 -> 0 bytes
+ RMITest/bin/rmi/Pi.class                         | Bin 2306 -> 0 bytes
+ RMITest/bin/rmi/Task.class                       | Bin 213 -> 0 bytes
+ RMITest/src/rmi/Compute.java                     |  17 ----
+ RMITest/src/rmi/ComputeEngine.java               |  49 -----------
+ RMITest/src/rmi/ComputePi.java                   |  42 ---------
+ RMITest/src/rmi/Pi.java                          | 107 -----------------------
+ RMITest/src/rmi/Task.java                        |  12 ---
+ RMITutorial/.classpath                           |   6 ++
+ RMITutorial/.project                             |  17 ++++
+ RMITutorial/.settings/org.eclipse.jdt.core.prefs |  11 +++
+ RMITutorial/bin/RMI/Pi.class                     | Bin 0 -> 1995 bytes
+ RMITutorial/bin/RMI/Task.class                   | Bin 0 -> 213 bytes
+ RMITutorial/bin/client/ComputePi.class           | Bin 0 -> 1639 bytes
+ RMITutorial/bin/client/Pi.class                  | Bin 0 -> 1961 bytes
+ RMITutorial/bin/compute/Compute.class            | Bin 0 -> 307 bytes
+ RMITutorial/bin/compute/Task.class               | Bin 0 -> 217 bytes
+ RMITutorial/bin/engine/ComputeEngine.class       | Bin 0 -> 1836 bytes
+ RMITutorial/src/RMI/Pi.java                      | 100 +++++++++++++++++++++
+ RMITutorial/src/RMI/Task.java                    |   6 ++
+ RMITutorial/src/client/ComputePi.java            |  32 +++++++
+ RMITutorial/src/client/Pi.java                   |  96 ++++++++++++++++++++
+ RMITutorial/src/compute/Compute.java             |  17 ++++
+ RMITutorial/src/compute/Task.java                |  13 +++
+ RMITutorial/src/engine/ComputeEngine.java        |  51 +++++++++++
+ 31 files changed, 349 insertions(+), 261 deletions(-)
+
+commit 8d812a51a626828758413cf259248d1535ac066b
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Fri Dec 12 13:14:34 2014 +0100
+
+    +asta file
+
+ Dezsys07_Pi_Calculator.docx | Bin 274861 -> 275646 bytes
+ PiCalc.asta                 | Bin 0 -> 16083 bytes
+ ~$zsys07_Pi_Calculator.docx | Bin 162 -> 0 bytes
+ ~WRL4046.tmp                | Bin 275058 -> 0 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a1508bacf250332347d0c5eaa65a0686d759ccb5
+Author: swortha-tgm <swortha@student.tgm.ac.at>
+Date:   Fri Dec 12 13:11:51 2014 +0100
+
+    Umlaute Korrigiert
+
+ PiCalculator/bin/.gitignore             | 4 ++++
+ PiCalculator/src/server/Calculator.java | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit ac32a650ce9f755f1a9075a22863a5b064fb0a87
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Fri Dec 12 13:04:17 2014 +0100
+
+    +Oracle Tutorial Klassen
+
+ RMITest/.classpath                           |   6 ++
+ RMITest/.project                             |  17 +++++
+ RMITest/.settings/org.eclipse.jdt.core.prefs |  11 +++
+ RMITest/bin/rmi/Compute.class                | Bin 0 -> 163 bytes
+ RMITest/bin/rmi/ComputeEngine.class          | Bin 0 -> 1610 bytes
+ RMITest/bin/rmi/ComputePi.class              | Bin 0 -> 1785 bytes
+ RMITest/bin/rmi/Pi.class                     | Bin 0 -> 2306 bytes
+ RMITest/bin/rmi/Task.class                   | Bin 0 -> 213 bytes
+ RMITest/src/rmi/Compute.java                 |  17 +++++
+ RMITest/src/rmi/ComputeEngine.java           |  49 ++++++++++++
+ RMITest/src/rmi/ComputePi.java               |  42 +++++++++++
+ RMITest/src/rmi/Pi.java                      | 107 +++++++++++++++++++++++++++
+ RMITest/src/rmi/Task.java                    |  12 +++
+ 13 files changed, 261 insertions(+)
+
+commit 0ae55f4ade2ec49ec68729fd95f697cebe323d9d
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Fri Dec 12 12:39:33 2014 +0100
+
+    -Source Code
+    +Client not working
+    +Server shall work
+    +Controller interface for the Server
+
+ Bilder/rmi-3.gif                                  | Bin 0 -> 3395 bytes
+ Dezsys07_Pi_Calculator.docx                       | Bin 270186 -> 274861 bytes
+ PiCalculator/.classpath                           |   6 ++
+ PiCalculator/.project                             |  17 +++++
+ PiCalculator/.settings/org.eclipse.jdt.core.prefs |  11 +++
+ PiCalculator/bin/client/Client.class              | Bin 0 -> 1488 bytes
+ PiCalculator/bin/controler/Main.class             | Bin 0 -> 388 bytes
+ PiCalculator/bin/server/Calculator.class          | Bin 0 -> 225 bytes
+ PiCalculator/bin/server/Server.class              | Bin 0 -> 1766 bytes
+ PiCalculator/src/client/Client.java               |  35 ++++++++++
+ PiCalculator/src/controler/Main.java              |  11 +++
+ PiCalculator/src/server/Calculator.java           |  17 +++++
+ PiCalculator/src/server/Server.java               |  78 ++++++++++++++++++++++
+ ~$zsys07_Pi_Calculator.docx                       | Bin 0 -> 162 bytes
+ ~WRL4046.tmp                                      | Bin 0 -> 275058 bytes
+ 15 files changed, 175 insertions(+)
+
+commit a7b98046ef26cb144828a7d0f44b3d72b2d1bd4a
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Fri Dec 12 11:55:14 2014 +0100
+
+    -lets get it started!
+    + Doku Grundgerüst
+    +Bilder Ordner
+
+ Bilder/Aufgabenstellung.png | Bin 0 -> 224400 bytes
+ Dezsys07_Pi_Calculator.docx | Bin 0 -> 270186 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit e92db45b772adbc48a60486b6e2a68945b4853b3
+Author: TGMhfock <hagen.fock@gmail.com>
+Date:   Fri Dec 5 13:00:16 2014 +0100
+
+    first commit
+
+ GGHF_GoodLuckHaveFun.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
