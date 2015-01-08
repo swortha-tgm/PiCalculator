@@ -31,11 +31,7 @@
 package client;
 
 import compute.Compute;
-import compute.Task;
-
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.rmi.RemoteException;
 
 /**
  * Ist dafuer zustaendig, dass Pi funktioniert.
@@ -43,7 +39,6 @@ import java.rmi.RemoteException;
  * @author Oracle
  */
 public class Pi implements Compute {
-	private static final long serialVersionUID = 227L;
 	/** constants used in pi computation */
 	private static final BigDecimal FOUR = BigDecimal.valueOf(4);
 	/** rounding mode to use during pi computation */
@@ -74,6 +69,9 @@ public class Pi implements Compute {
 	 * tangent:
 	 *
 	 * arctan(x) = x - (x^3)/3 + (x^5)/5 - (x^7)/7 + (x^9)/9 ...
+	 * @param inverseX 
+	 * @param scale 
+	 * @return result
 	 */
 	public static BigDecimal arctan(int inverseX, int scale) {
 		BigDecimal result, numer, term;

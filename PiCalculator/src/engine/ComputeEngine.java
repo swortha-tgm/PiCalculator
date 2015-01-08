@@ -11,7 +11,6 @@ import balancer.CalculatorRegistry;
 import compute.Compute;
 import compute.Task;
 
-
 /**
  * Diese Klasse dient als Server. Sie verarbeitet die Anfragen der Clients
  * 
@@ -29,6 +28,9 @@ public class ComputeEngine implements Compute {
 
 	/**
 	 * Diese Methode ist fuer die Berechnung zustaendigs
+	 * 
+	 * @param t
+	 * @return Pi wird zuruekgegeben
 	 */
 	public <T> T executeTask(Task<T> t) {
 		return t.execute();
@@ -39,16 +41,18 @@ public class ComputeEngine implements Compute {
 	 */
 	public static void main(String[] args) {
 		if (System.getSecurityManager() == null) {
-			System.setProperty("java.security.policy",
-					"file:./policy/pi.policy");
+			System.setProperty("java.security.policy", "file:./policy/pi.policy");
 			System.setSecurityManager(new SecurityManager());
 		}
 		try {
 			String name = "Compute";
 			Compute engine = new ComputeEngine();
-			Compute stub = (Compute) UnicastRemoteObject
-					.exportObject(engine, 0);
-			Registry registry = LocateRegistry.getRegistry("localhost", 1099); //als Port wurde 1009 gewaehlt
+			Compute stub = (Compute) UnicastRemoteObject.exportObject(engine, 0);
+			Registry registry = LocateRegistry.getRegistry("localhost", 1099); // als
+																				// Port
+																				// wurde
+																				// 1009
+																				// gewaehlt
 			CalculatorRegistry cr = (CalculatorRegistry) registry.lookup("balancer");
 			cr.addComputeEngine(engine);
 			System.out.println("ComputeEngine bound");
